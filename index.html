@@ -5,6 +5,7 @@
     <link href="./style.css" rel="stylesheet"/>
     <script src="./functions.js"></script>
 
+
 </head>
 
 <body>
@@ -14,55 +15,96 @@
 
 
 <div class="main-area" id="area1">
+    <div class="row">
+        <div class="querter">
+            <h2>Image</h2>
+            <img src="./image1.jpg" alt="here should be photo" id="image1"/>
 
-    <div class="querter">
-        <h2>Image</h2>
-        <img src="./image1.jpg" alt="here should be photo" id="image1"/>
-
-    </div>
-    <div class="querter">
-        <h2>Checkboxes</h2>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label><br>
-        <h2>Radio buttons</h2>
-        <input type="radio" id="tea" name="gender" value="tea">
-        <label for="tea">Tea</label><br>
-        <input type="radio" id="coffee" name="gender" value="coffee">
-        <label for="coffee">Coffee</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label>
-
-    </div>
-    <div class="querter">
-        <h2>Dropdown</h2>
-        <label for="cars">Choose a car:</label>
-
-        <select name="cars" id="cars">
-            <option value="volvo" id="volvo">Volvo</option>
-            <option value="honda" id="honda">Honda</option>
-            <option value="mercedes" id="mercedes">Mercedes</option>
-            <option value="audi" id="audi">Audi</option>
-        </select>
-    </div>
-    <div class="querter">
-
-        <h2>Input with buttons</h2>
-        <div class="inner-element">
-
-            <label for="input1">Write something</label><br/><br/>
-            <input name="input-value" type="text" id="input1" value=""/><br/><br/>
-            <button onclick="alertInput('input1');">Alert the value</button>
-            <br/><br/>
-
-            <button onclick="logInput('input1')">Log the value</button>
+        </div>
+        <div class="querter">
+            <h2>Checkboxes</h2>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>
+            <h2>Radio buttons</h2>
+            <input type="radio" id="tea" name="gender" value="tea">
+            <label for="tea">Tea</label><br>
+            <input type="radio" id="coffee" name="gender" value="coffee">
+            <label for="coffee">Coffee</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
 
         </div>
 
     </div>
+    <div class = "row">
+
+        <div class="querter">
+            <h2>Dropdown</h2>
+            <label for="cars">Choose a car:</label>
+
+            <select name="cars" id="cars">
+                <option value="volvo" id="volvo">Volvo</option>
+                <option value="honda" id="honda">Honda</option>
+                <option value="mercedes" id="mercedes">Mercedes</option>
+                <option value="audi" id="audi">Audi</option>
+            </select>
+        </div>
+        <div class="querter">
+
+            <h2>Input with buttons</h2>
+            <div class="inner-element">
+
+                <label for="input1">Write something</label><br/><br/>
+                <input name="input-value" type="text" id="input1" value=""/><br/><br/>
+                <button onclick="alertInput('input1');">Alert the value</button>
+                <br/><br/>
+
+                <button onclick="logInput('input1')">Log the value</button>
+
+            </div>
+
+        </div>
+    </div>
+    <div class ="row">
+        <div class = querter>
+            <h2>Toggle</h2>
+
+            <!-- Rectangular switch -->
+            <label class="switch">
+                <input type="checkbox" id="togBtn1">
+                <div class="slider round">
+                    <!--ADDED HTML -->
+                    <span class="on">ON</span>
+                    <span class="off">OFF</span>
+                    <!--END-->
+                </div>
+            </label>
+            <!-- Rectangular switch -->
+            <label class="switch">
+                <input type="checkbox" id="togBtn2">
+                <div class="slider round">
+                    <!--ADDED HTML -->
+                    <span class="on">ON</span>
+                    <span class="off">OFF</span>
+                    <!--END-->
+                </div>
+            </label>
+
+
+        </div>
+        <div class = querter>
+            <h2>Link</h2>
+            <a href ="https://experitest.com/">Open in this page</a><br/>
+            <a href ="https://experitest.com/" target="_blank">Open in other tab</a>
+
+        </div>
+
+    </div>
+
 
 
 </div>
